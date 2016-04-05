@@ -47,7 +47,7 @@ node default {
   owner => 'root',
   group => 'root',
   mode => '0644',
-  content => "Hey, Training Day - Day 2\n",
+  content => "Hey, Training Day - So far so good\n",
 }
   # notify { "Hello, my name is ${::hostname}": }
 }
