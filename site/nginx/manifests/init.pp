@@ -1,5 +1,4 @@
-class nginx {
-  $docroot = '/var/www'
+class nginx ($docroot = undef){
   $srcpath = 'puppet:///modules/nginx'
   File {
     owner => 'root',

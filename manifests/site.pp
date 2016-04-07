@@ -47,7 +47,10 @@ node default {
 #  notify { "This is a ${vmname} virtual machine.": }
 #  
 #  }
-  notify { 'Notice':
-    message => hiera('message'),
+#  notify { 'Notice':
+#    message => hiera('message'),
+#  }
+  class { 'nginx':
+    root => '/var/www/html',
   }
 }
