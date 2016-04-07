@@ -51,6 +51,6 @@ node default {
 #    message => hiera('message'),
 #  }
   class { 'nginx':
-    root => '/var/www/html',
+    docroot => '/var/www/html',
   }
 }
